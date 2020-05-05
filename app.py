@@ -19,9 +19,9 @@ def test():
 def ENGI1006():
     #return "<p> This is my <b> ENGI1006 </b> website! </p>"
     return render_template("1006.html")
-@app.route("/columbia")
-def columbia():
-    return "Columbia!!"
+@app.route("/Kriti")
+def Kriti():
+    return "My name is Kriti Kumar."
 #start the server
 if __name__ == "__main__":
     app.run()
