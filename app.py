@@ -15,6 +15,7 @@ app = Flask(__name__)
 @app.route("/")
 def test():
      return render_template("index.html")
+ 
 @app.route("/ENGI1006")
 def ENGI1006():
     #return "<p> This is my <b> ENGI1006 </b> website! </p>"
@@ -22,7 +23,8 @@ def ENGI1006():
 
 @app.route("/assignments")
 def assignments():
-    return render_template("assign.html")
+    return render_template("assignments.html")
+
 @app.route("/classes")
 def classes():
     return render_template("class.html")

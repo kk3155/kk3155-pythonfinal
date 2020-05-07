@@ -1,0 +1,263 @@
+Last login: Tue May  5 13:24:56 on ttys000
+(base) Kritis-MacBook-Pro:~ kritikumar$ cd ..
+(base) Kritis-MacBook-Pro:Users kritikumar$ cd .. /Users/kritikumar/Desktop/Python/kk3155-final
+(base) Kritis-MacBook-Pro:/ kritikumar$ /Users/kritikumar/Desktop/Python/kk3155-final
+-bash: /Users/kritikumar/Desktop/Python/kk3155-final: is a directory
+(base) Kritis-MacBook-Pro:/ kritikumar$ cd /Users/kritikumar/Desktop/Python/kk3155-final
+(base) Kritis-MacBook-Pro:kk3155-final kritikumar$ git commit -m
+error: switch `m' requires a value
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <default>   how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+
+(base) Kritis-MacBook-Pro:kk3155-final kritikumar$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   .DS_Store
+	modified:   1006.html
+	modified:   Terminal Saved Output
+	modified:   app.py
+	modified:   templates/index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	assign.html
+	assignments
+	assignments.html
+	class.html
+	classes.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) Kritis-MacBook-Pro:kk3155-final kritikumar$ git commit -a triedto add assignments and classes pages
+fatal: Paths with -a does not make sense.
+(base) Kritis-MacBook-Pro:kk3155-final kritikumar$ git init
+Reinitialized existing Git repository in /Users/kritikumar/Desktop/Python/kk3155-final/.git/
+(base) Kritis-MacBook-Pro:kk3155-final kritikumar$ git add .
+(base) Kritis-MacBook-Pro:kk3155-final kritikumar$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   .DS_Store
+	modified:   1006.html
+	modified:   Terminal Saved Output
+	modified:   app.py
+	new file:   assign.html
+	new file:   assignments
+	new file:   assignments.html
+	new file:   class.html
+	new file:   classes.html
+	modified:   templates/index.html
+
+(base) Kritis-MacBook-Pro:kk3155-final kritikumar$ git commit -m tried adding assignments and classes pages
+error: pathspec 'adding' did not match any file(s) known to git.
+error: pathspec 'and' did not match any file(s) known to git.
+error: pathspec 'classes' did not match any file(s) known to git.
+error: pathspec 'pages' did not match any file(s) known to git.
+(base) Kritis-MacBook-Pro:kk3155-final kritikumar$ git commit -m added more pages
+error: pathspec 'more' did not match any file(s) known to git.
+error: pathspec 'pages' did not match any file(s) known to git.
+(base) Kritis-MacBook-Pro:kk3155-final kritikumar$ 
+(base) Kritis-MacBook-Pro:kk3155-final kritikumar$ pwd
+/Users/kritikumar/Desktop/Python/kk3155-final
+(base) Kritis-MacBook-Pro:kk3155-final kritikumar$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   .DS_Store
+	modified:   1006.html
+	modified:   Terminal Saved Output
+	modified:   app.py
+	new file:   assign.html
+	new file:   assignments
+	new file:   assignments.html
+	new file:   class.html
+	new file:   classes.html
+	modified:   templates/index.html
+
+(base) Kritis-MacBook-Pro:kk3155-final kritikumar$ git add .
+(base) Kritis-MacBook-Pro:kk3155-final kritikumar$ git add . 
+(base) Kritis-MacBook-Pro:kk3155-final kritikumar$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+(base) Kritis-MacBook-Pro:kk3155-final kritikumar$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   .DS_Store
+	modified:   1006.html
+	modified:   Terminal Saved Output
+	modified:   app.py
+	new file:   assign.html
+	new file:   assignments
+	new file:   assignments.html
+	new file:   class.html
+	new file:   classes.html
+	modified:   templates/index.html
+
+(base) Kritis-MacBook-Pro:kk3155-final kritikumar$ git commit -m pages
+[master 2bf505e] pages
+ Committer: Kriti Kumar <kritikumar@Kritis-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 10 files changed, 117 insertions(+), 160 deletions(-)
+ rewrite Terminal Saved Output (88%)
+ create mode 100755 assign.html
+ create mode 100755 assignments
+ create mode 100755 assignments.html
+ create mode 100755 class.html
+ create mode 100755 classes.html
+(base) Kritis-MacBook-Pro:kk3155-final kritikumar$ git status
+On branch master
+nothing to commit, working tree clean
+(base) Kritis-MacBook-Pro:kk3155-final kritikumar$ https://github.com/kk3155/Flask-Project.git
+-bash: https://github.com/kk3155/Flask-Project.git: No such file or directory
+(base) Kritis-MacBook-Pro:kk3155-final kritikumar$ ls
+1006.html
+Screen Shot 2020-04-28 at 4.06.15 PM.png
+Terminal Saved Output
+app.py
+assign.html
+assignments
+assignments.html
+class.html
+classes.html
+grad_photo.jpg
+index.html
+templates
+(base) Kritis-MacBook-Pro:kk3155-final kritikumar$ cd /Users/kritikumar/Desktop/Python/kk3155-final
+(base) Kritis-MacBook-Pro:kk3155-final kritikumar$ git remote add originhttps://github.com/kk3155/Flask-Project.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=<push|fetch>]
+                          set up remote as a mirror to push to or fetch from
+
+(base) Kritis-MacBook-Pro:kk3155-final kritikumar$ git remote -v
+(base) Kritis-MacBook-Pro:kk3155-final kritikumar$ git remote add origin https://github.com/kk3155/Flask-Project.git
+(base) Kritis-MacBook-Pro:kk3155-final kritikumar$ git remote -v
+origin	https://github.com/kk3155/Flask-Project.git (fetch)
+origin	https://github.com/kk3155/Flask-Project.git (push)
+(base) Kritis-MacBook-Pro:kk3155-final kritikumar$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   app.py
+	modified:   class.html
+	modified:   templates/index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) Kritis-MacBook-Pro:kk3155-final kritikumar$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    1006.html
+	deleted:    Screen Shot 2020-04-28 at 4.06.15 PM.png
+	modified:   app.py
+	deleted:    assign.html
+	deleted:    assignments.html
+	deleted:    class.html
+	deleted:    classes.html
+	deleted:    grad_photo.jpg
+	deleted:    index.html
+	modified:   templates/index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	templates/.DS_Store
+	templates/1006 copy.html
+	templates/assign.html
+	templates/assignments.html
+	templates/class.html
+	templates/classes.html
+	templates/static/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) Kritis-MacBook-Pro:kk3155-final kritikumar$ git add . 
+(base) Kritis-MacBook-Pro:kk3155-final kritikumar$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	deleted:    Screen Shot 2020-04-28 at 4.06.15 PM.png
+	modified:   app.py
+	deleted:    assignments.html
+	deleted:    class.html
+	deleted:    index.html
+	new file:   templates/.DS_Store
+	renamed:    1006.html -> templates/1006 copy.html
+	renamed:    assign.html -> templates/assign.html
+	new file:   templates/assignments.html
+	new file:   templates/class.html
+	renamed:    classes.html -> templates/classes.html
+	modified:   templates/index.html
+	renamed:    grad_photo.jpg -> templates/static/grad_photo.jpg
+
+(base) Kritis-MacBook-Pro:kk3155-final kritikumar$ 
