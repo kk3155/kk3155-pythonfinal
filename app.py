@@ -27,7 +27,7 @@ def assignments():
 
 @app.route("/classes")
 def classes():
-    return render_template("class.html")
+    return render_template("classes.html")
 
 #start the server
 if __name__ == "__main__":
